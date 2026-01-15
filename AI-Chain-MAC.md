@@ -12,7 +12,6 @@ MuleSoft AI Chain (MAC) Connector is an AI connector for MuleSoft that enables s
 
 ## Purpose
 
-MAC makes it easy to use AI in Mule applications by providing a standardized connector interface for various AI services.
-
-- Build AI agents, chatbots, and RAG (Retrieval Augmented Generation) solutions
-- - Easily switch AI models or vector stores without changing much code
+	• Make it easy to use AI in Mule applications
+	• Build AI agents, chatbots, and RAG (Retrieval Augmented Generation) solutions
+  • Easily switch AI models or vector stores without changing much code.
