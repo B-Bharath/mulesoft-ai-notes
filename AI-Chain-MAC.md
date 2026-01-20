@@ -14,4 +14,12 @@ MuleSoft AI Chain (MAC) Connector is an AI connector for MuleSoft that enables s
 
 	• Make it easy to use AI in Mule applications
 	• Build AI agents, chatbots, and RAG (Retrieval Augmented Generation) solutions
-  • Easily switch AI models or vector stores without changing much code.
+  	• BEasily switch AI models or vector stores without changing much code.
+	
+## Key Features
+	• LLM Access
+		○ Chat, text generation, summarization, analysis
+		○ Supports OpenAI, Azure OpenAI, Gemini, Anthropic, Mistral, Hugging Face, Ollama, Groq
+	• Embeddings & RAG
+		○ Create embeddings
+		○ Store and search vectors
