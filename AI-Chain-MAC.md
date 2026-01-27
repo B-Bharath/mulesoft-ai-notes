@@ -6,7 +6,7 @@ MuleSoft AI Chain (MAC) Connector is an AI connector for MuleSoft that enables s
 
 ## Key Features
 
-- **AI Model Integration**: Connect to AI models (LLMs) like OpenAI, Gemini, Mistral, and more
+- **AI Model Integration**: Connect to AI models (LLMs) like OpenAI, Gemini, and more
 - **Native Mule Integration**: Use AI directly inside Mule flows, just like DB or HTTP connectors
 - **Platform Support**: Runs inside Anypoint Platform
 
@@ -14,7 +14,7 @@ MuleSoft AI Chain (MAC) Connector is an AI connector for MuleSoft that enables s
 
 	• Make it easy to use AI in Mule applications
 	• Build AI agents, chatbots, and RAG (Retrieval Augmented Generation) solutions
-  	• BEasily switch AI models or vector stores without changing much code.
+  	• Easily switch AI models or vector stores without changing much code.
 	
 ## Key Features
 	• LLM Access
