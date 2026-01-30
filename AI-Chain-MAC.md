@@ -27,4 +27,13 @@ MuleSoft AI Chain (MAC) Connector is an AI connector for MuleSoft that enables s
 		○ Sentiment analysis
 		○ Image generation & image analysis
 		○ Tool / function calling (AI can call APIs or services)
+## Supported Operations
+MAC provides ~15 operations grouped as:
+	• Chat – ask prompts and get responses
+	• Agents – AI agents that reason and act
+	• Embeddings – generate and search vectors
+	• RAG – question answering over documents
+	• Image – text-to-image and image analysis
+	• Sentiment – analyze user sentiment
+	• Tools – let AI call APIs or functions
 
