@@ -37,3 +37,15 @@ MAC provides ~15 operations grouped as:
 - **Image** – text-to-image and image analysis
 - **Sentiment** – analyze user sentiment
 - **Tools** – let AI call APIs or functions
+
+  How MAC Fits into Mule
+	• Import MAC Connector from Anypoint Exchange
+	• Configure it as a global element
+	• Drag & drop MAC operations into Mule flows
+	• Can be used with:
+		○ APIs
+		○ Databases
+		○ Queues
+		○ Salesforce
+        ○ External REST services
+
