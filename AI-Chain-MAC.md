@@ -52,3 +52,41 @@ MAC provides ~15 operations grouped as:
   - Queues
   - Salesforce
   - External REST services
+ 
+  - ## Best Practices & Use Case Patterns
+
+### Performance Tips
+- Keep prompts concise and specific — shorter, well-scoped prompts reduce token usage and latency
+- Use **Chat** operations for simple Q&A; reserve **Agent** operations for multi-step reasoning tasks
+- For RAG, pre-process and chunk documents before ingestion to improve embedding quality and retrieval accuracy
+- Use a local file-based vector store for POCs/dev; switch to an external vector store (via Vector Store Connector) for production
+- Avoid re-embedding the same documents on every run — store embeddings once, query many times
+- Leverage Mule's built-in error handling (`on-error-propagate`, `on-error-continue`) around MAC operations to gracefully handle LLM timeouts or API errors
+
+### Common Use Case Patterns
+
+#### 1. Customer Service Agent
+- Automatically classify and summarize incoming support cases
+- Use **Agent** + **Tools** to look up order status or account info from CRM/DB in real time
+- Maintain conversation history with **Chat** operations for multi-turn support bots
+
+#### 2. Chatbot with Context
+- Use **Chat** ops with a conversation memory object to keep context across turns
+- Combine with Salesforce or DB connector to personalize responses based on user data
+
+#### 3. Document Q&A (RAG)
+- Ingest PDFs, Word docs, or web content → generate embeddings → store in vector store
+- Use **RAG** operations to answer questions grounded in your own documents (e.g., HR policies, product manuals)
+
+#### 4. Autonomous Agent with Tool Calling
+- Define tools (REST endpoints) in `tools.config.json` or inline `tools` array
+- Agent decides at runtime which tool to call based on the user prompt (e.g., inventory lookup, HR system query)
+- Useful for: IT helpdesk bots, sales assistants, operations automation
+
+#### 5. Content Generation Pipeline
+- Use **Chat** ops to generate marketing copy, email drafts, or product descriptions at scale
+- Combine with Anypoint MQ or Scheduler to run batch generation jobs asynchronously
+
+#### 6. Sentiment & Triage
+- Run **Sentiment** op on inbound messages (emails, tickets, forms) to score urgency
+- Route high-priority negative sentiment cases to human agents via Salesforce or ServiceNow connector
