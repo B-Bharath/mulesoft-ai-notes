@@ -53,7 +53,7 @@ MAC provides ~15 operations grouped as:
   - Salesforce
   - External REST services
  
-  - ## Best Practices & Use Case Patterns
+## Best Practices & Use Case Patterns
 
 ### Performance Tips
 - Keep prompts concise and specific — shorter, well-scoped prompts reduce token usage and latency
