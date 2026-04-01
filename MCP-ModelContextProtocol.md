@@ -56,8 +56,15 @@ MCP (Model Context Protocol) is an open standard developed by Anthropic that ena
 - `SSE (Server-Sent Events)` – HTTP-based, used for remote servers
 
 ---
-REST vs MCP:
+### REST vs MCP
+
 REST is like the language of the internet: it's a set of rules for how one computer asks another for a specific piece of data (like a weather report or a user profile).MCP, on the other hand, is like a universal adapter designed specifically for AI "brains."
+
+**REST**  
+REST is the standard way applications communicate over the web using HTTP endpoints and methods to request or update specific data, such as a weather report or a customer profile.
+
+**MCP**  
+MCP is a protocol designed specifically for AI assistants, acting like a universal adapter that lets them discover tools, understand their schemas, and call them in a consistent way across different systems.
 
 
 ## MCP in MuleSoft Context
