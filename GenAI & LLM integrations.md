@@ -23,15 +23,14 @@
 
 ---
 
-## Core Integration Patterns
+## RAG – Short Overview
 
-- **Direct LLM calls**  
-  - App → LLM API (prompt, model, params) → generated answer (summarize, classify, translate, reason).  
+- **Indexing (offline / batch)**  
+  - Take documents → chunk into small passages → generate embeddings → store in a vector database.  
 
-- **RAG (Retrieval Augmented Generation)**  
-  - App retrieves relevant documents/snippets from a vector store and injects them into the prompt so the LLM answers with fresh, domain‑specific context.  
+- **Querying (online)**  
+  - User query → embed → similarity search (top‑k chunks) → build prompt: “context + question” → send to LLM → grounded answer.  
 
-- **Tool‑using agents**  
-  - LLM decides when to call tools (functions/APIs) to fetch data or perform actions, then uses their results in its reasoning and responses.  
+- Effect: higher accuracy, less hallucination, and the ability to use private, up‑to‑date data without retraining the model.  
 
 ---
