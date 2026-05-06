@@ -22,3 +22,16 @@
   - LLM decides when to call tools (functions/APIs) to fetch data or perform actions, then uses their results in its reasoning and responses.  
 
 ---
+
+## Core Integration Patterns
+
+- **Direct LLM calls**  
+  - App → LLM API (prompt, model, params) → generated answer (summarize, classify, translate, reason).  
+
+- **RAG (Retrieval Augmented Generation)**  
+  - App retrieves relevant documents/snippets from a vector store and injects them into the prompt so the LLM answers with fresh, domain‑specific context.  
+
+- **Tool‑using agents**  
+  - LLM decides when to call tools (functions/APIs) to fetch data or perform actions, then uses their results in its reasoning and responses.  
+
+---
