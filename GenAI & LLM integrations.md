@@ -34,3 +34,14 @@
 - Effect: higher accuracy, less hallucination, and the ability to use private, up‑to‑date data without retraining the model.  
 
 ---
+## Tools & MCP‑style Integrations
+
+- **Tools (functions/APIs)**  
+  - Structured operations the LLM can call, such as `get_user_profile`, `search_tickets`, or `create_order`.  
+  - The host app executes the tool and returns JSON; the model uses that result in the next reasoning step.  
+
+- **MCP (Model Context Protocol) perspective**  
+  - MCP defines a standard way for LLM *clients* to discover servers, list tools, call them, and stream results.  
+  - Tools and resources are exposed via MCP servers; LLM agents can use them without custom per‑provider wiring.  
+
+---
