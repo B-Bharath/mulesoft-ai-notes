@@ -45,3 +45,12 @@
   - Tools and resources are exposed via MCP servers; LLM agents can use them without custom per‑provider wiring.  
 
 ---
+## Concrete examples of tools an LLM can call
+
+- `getCustomerByEmail(email)` – look up a customer in CRM before answering.  
+- `listOpenTickets(customerId)` – fetch current support issues for context.  
+- `searchDocs(query)` – run a keyword or vector search in a document store (often combined with RAG).  
+- `createSupportTicket(payload)` – turn a conversation into an actual ticket in the system.  
+- `getExchangeRate(from, to)` – fetch real‑time FX data for calculations.  
+
+---
