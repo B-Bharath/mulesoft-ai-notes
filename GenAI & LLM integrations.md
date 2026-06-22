@@ -57,4 +57,4 @@
 ## AI Gateways / LLM Proxies (high level)
 
 - Single “front door” API that routes to multiple LLM providers and models, often via an OpenAI‑compatible interface.  
-- Central place for auth, routing, quotas, logging, and policies for all GenAI traffic. 
+- Central place for auth, routing, logging, and policies for all GenAI traffic. 
